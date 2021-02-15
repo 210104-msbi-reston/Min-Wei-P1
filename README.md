@@ -15,3 +15,5 @@ The tracking system can where each product has been by serial number. For a give
 A product can be returned and shipped back to the manufacturer. This too is tracked.
 
 Each manufacturer has a fixed price for how much it sells a product. When the next node in the supply chain buys it from the manufacturer, they mark up the price by 8% per node. Since a product makes 7 jumps before reaching a customer, the price the customer pays is the [price set by the manufacturer] * 1.08^7.
+
+This database includes views and stored procedures that supply chain managers may use as well as triggers to automatically populate derived fields. It also includes stored procedures to simulate products being shipped up and down the supply chain. In addition to that, the database also has non-clustered indexes to speed up performance.
